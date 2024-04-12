@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 100%;
+}
+.medium{
+    display: none;
+}
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+
+
+.preventSelection{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+
+.main{
+    width: 100vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.content{
+    background-image: url("/materials/tlo2.png"); /*("./materials/tlo2.png")*/
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    height: 110px;
+    width: 100%;
+}
+
+.leftHeader{
+    width: 33%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    color: #074095;
+}
+
+.buttonTop:hover{
+  color: #4169E1;
+}
+
+.buttonTop{
+  cursor: pointer;
+  transition: all ease-out .2s;
+}
+
+.logo{
+  display: flex;
+  height: 100%;
+  width: 33%; 
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logoImage:hover{
+  max-height: 90px;
+}
+
+.logoImage{
+  max-height: 80px;
+  margin-right: 10px;
+  transition: ease-out .2s;
+}
+
+.name{
+    font-size: 30px;
+}
+
+.yellow{
+    color: #FBA834;
+}
+
+.red{
+    color: #DC4949;
+}
+
+.blue{
+    color: #4169E1;
+}
+.white{
+    color: #e8e9f3;
+}
+
+.rightHeader{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100%;
+    width: 33.4%;
+}
+
+.icon > img {
+    max-height: 20px;
+    margin-right: 35px;
+}
+
+.buttonSign{
+    background-color: #fab75a;
+    padding: 12px 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    color: #074095;
+}
+
+.rest{
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    margin-bottom: 10px;
+}
+/* MÓJ KOD */
+.middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%; 
+    width:100%;
+    /* background-color: red; */
+}
+.mHeader{
+    display: flex;
+    width: 80%;
+    height: 10%;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #074095;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-shrink: 0;
+}
+h3{
+    color: #e8e9f3;
+    font-size: 2.75em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.mDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 90%;
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(65, 105, 225, 0.65);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.emotion{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+}
+.emotion2{
+    margin-bottom: 10%;
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+}
+.react{
+    display: flex;
+}
+.r1{
+    width: 180px;
+    height: 128px;
+    margin: 5px 25px;
+    background-color: #fab75a;
+    cursor: pointer;
+    border-radius: 10px;
+    /* TEXT */
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #074095;
+    font-size: 1.75em;
+    text-align: center;
+    line-height: 128px;
+    word-wrap: break-word;
+}
+.r1:hover{
+    cursor: pointer;
+    background-color: #FBA834;
+}
+.testos{
+    width:128px;
+    height: 128px;
+    margin: 5px 25px;
+    background-color: rebeccapurple;
+    cursor: pointer;
+    color: #e8e9f3;
+    text-align: center;
+    line-height: 128px;
+    font-size:30px;
+}
+.testos:hover{
+    background-color: rgb(61, 24, 97);
+}
+
+
+.scoreBg{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  opacity: 50%;
+  display: none;
+}
+
+.score{
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  background-color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+
+}
+
+
+.heading{
+  width: 100%;
+  text-align: center;
+  background-color: #FBA834;
+  padding: 15px 0px;
+  font-size: 20px;
+}
+
+.result{
+  padding: 30px 0px;
+  width: 100%;
+  color: #074095;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.comment{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.btns{
+  width: 100%;
+  padding: 30px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn{
+  padding: 14px 40px;
+  background-color: #4169E1;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: #3657bc;
+}
+
+.imagePreview{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.imagePreview > img{
+  max-height: 100%;
+}

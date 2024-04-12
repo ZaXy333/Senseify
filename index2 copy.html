@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senseify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="test copy.css">
+</head>
+<body>
+    <div class="main roboto">
+        <div class="leftBar">
+            <div class="topIcon">
+                <img src="./materials/Menu.png" alt="" onclick="fun()">
+            </div>
+        </div>
+
+        <div class="content">
+            <header>
+                <div class="leftHeader roboto-medium">
+                    <div class="buttonTop">O nas</div>
+                    <div class="buttonTop">Kontakt</div>
+                    <div class="buttonTop">Oferta</div>
+                </div>
+                <div class="logo">
+                    <img src="./materials/logoTest.png" alt="" class="logoImage">
+                    <div class="name roboto-medium">
+                        <span class="yellow">Sen</span><span class="red">sei</span><span class="blue">fy</span>
+                    </div>
+                </div>
+                <div class="rightHeader">
+                    <div class="icon">
+                        <img src="./materials/Pin.png" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="./materials/Search.png" alt="">
+                    </div>
+                    <div class="buttonSign roboto-regular">Zaloguj się</div>
+                </div>
+            </header>
+
+            <div class="rest">
+                <div class="card">
+                    <div class="leftText">
+                        <p class="title roboto-medium">
+                            Problemy z rozpoznawaniem emocji mogą dotyczyć każdego z nas...
+                        </p>
+                        <p class="text roboto-regular">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet, magna ut facilisis sollicitudin.Duis tincidunt congue ex, id semper tortor eleifend eu. 
+                        </p>
+                        <div class="buttonOuter">
+                            <button class="button roboto-medium">
+                                Button
+                            </button>
+                        </div>
+                    </div>
+                    <img src="./materials/image.jpg" alt="">
+                </div>
+
+                <div class="cardSmall">
+                    <div class="leftText">
+                        <p class="title roboto-medium">
+                            Problemy z rozpoznawaniem emocji...
+                        </p>
+                        <p class="text roboto-regular">
+                            Lorem ipsum dolor sit amet, consectetur adagna ut facilisis solasd...
+                    </div>
+                    <img src="./materials/image.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        function fun(){
+            document.querySelector(".leftBar").classList.add("open")
+        }
+    </script>
+</body>
+</html>

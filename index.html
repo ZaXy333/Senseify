@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senseify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/font.css">
+    <link rel="stylesheet" href="./styles/navBar.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="icon" type="image/png" href="/materials/logoTest.png">
+
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+            <header class="preventSelection">
+                <div class="leftHeader roboto-medium">
+                    <div class="buttonTop" onclick="window.location = './pages/about.html'">O nas</div>
+                    <div class="buttonTop" onclick="window.location = './pages/materials/material1.html'">Materiały</div>
+                    <div class="buttonTop quiz" onclick="window.location = './pages/quiz.html'">Quiz</div>
+                </div>
+                <div class="logo">
+                    <img src="./materials/logoTest.png" alt="" class="logoImage">
+                    <div class="name roboto-medium">
+                        <span class="yellow">Sen</span><span class="red">sei</span><span class="blue">fy</span>
+                    </div>
+                </div>
+                <div class="rightHeader">
+                    <div class="icon">
+                        <img src="./materials/Pin.png" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="./materials/Search.png" alt="">
+                    </div>
+                    <div class="buttonSign roboto-medium" onclick="window.location = './pages/login.html'">Zaloguj się</div>
+                    <div class="buttonSign_out roboto-medium" onclick="logOut()">Wyloguj się</div>
+                </div>
+            </header>
+
+            <div class="rest">
+                <div class="card">
+                    <div class="leftText">
+                        <p class="title roboto-medium">
+                            Problemy z rozpoznawaniem emocji mogą dotyczyć każdego z nas.
+                        </p>
+                        <p class="text roboto-regular">
+                            Jest to na tyle ważny problem, że nie należy go lekceważyć. Może dotyczyć on zarówno osoby młodsze jak i starsze. Aby pomóc przy wykryciu ewentualnego problemu przychodzimy z idealnym rozwiązaniem. Za pomocą naszej strony możesz rozwiązać test sprawdzający umiejętności rozpoznawania emocji.
+                        </p>
+                        <div class="buttonOuter">
+                            <button class="button roboto-medium" onclick="window.location= './pages/test.html'">
+                                Test
+                            </button>
+                        </div>
+                    </div>
+                    <img src="./materials/image.jpg" alt="">
+                </div>
+
+                <div class="cardSmall">
+                    <div class="leftText">
+                        <p class="title roboto-medium">
+                            Wpływ zaburzeń na życie codzienne.
+                        </p>
+                        <p class="text roboto-regular">
+                            Problemy z rozpoznawaniem emocji mogą znacząco wpływać na nasze życie codzienne. Poniżej kilka przykładów...
+                    </div>
+                    <img src="./materials/mountain.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="medium roboto-regular">
+        <header>
+            <div class="logo">
+                <img src="./materials/logoTest.png" alt="" class="logoImage">
+                <div class="name roboto-medium">
+                    <span class="yellow">Sen</span><span class="red">sei</span><span class="blue">fy</span>
+                </div>
+            </div>
+            <div class="menu">
+                <img src="./materials/Menu.png" alt="">
+            </div>
+        </header>
+
+        <div class="imageOuter">
+            <div class="darken"></div>
+            <p class="imageText roboto-bold">Czy umiesz rozpoznawać poprawnie emocje?</p>
+            <div class="buttons">
+                <div class="readMore">Dowiedz się więcej</div>
+                <div class="takeTest">Zrób test</div>
+            </div>
+            <img src="./materials/image.jpg" alt="" class="image">
+        </div>
+
+        <div class="carouzele">
+            <div class="emotions">
+                <div class="topText"></div>
+                <div class="bottomText"></div>
+            </div>
+            <div class="emotions">
+                <div class="topText"></div>
+                <div class="bottomText"></div>
+            </div>
+            <div class="emotions">
+                <div class="topText"></div>
+                <div class="bottomText"></div>
+            </div>
+            <div class="emotions">
+                <div class="topText"></div>
+                <div class="bottomText"></div>
+            </div>
+            <div class="emotions">
+                <div class="topText"></div>
+                <div class="bottomText"></div>
+            </div>
+            <div class="emotions">
+                <div class="topText"></div>
+                <div class="bottomText"></div>
+            </div>
+            <div class="emotions">
+                <div class="topText"></div>
+                <div class="bottomText"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const updateScrollPercentage = function() { 
+            const scroll = document.querySelector(".content").scrollTop
+            const height = document.querySelector(".content").offsetHeight
+            console.log(scroll);
+
+            if(scroll>50){
+                document.querySelector(".header").classList.add("headerActive")
+                document.querySelector(".buttonSign").classList.add("buttonSignActive")
+            }else{
+
+                document.querySelector(".header").classList.remove("headerActive")
+                document.querySelector(".buttonSign").classList.remove("buttonSignActive")
+
+
+            }
+        }
+
+            document.querySelector(".content").addEventListener('scroll', updateScrollPercentage)
+    </script>
+
+
+    <script type="module">
+        import {log_val, checkUser, checkAuthState, log_out,add_to_database } from "./scripts/script.js";
+        // add_to_database();
+        window.logModule = log_val;
+        window.logOut = log_out
+        checkAuthState()
+    </script>
+
+    
+</body>
+</html> 

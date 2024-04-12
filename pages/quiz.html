@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senseify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/navBar.css">
+    <link rel="stylesheet" href="../styles/styletest.css">
+    <link rel="icon" type="image/png" href="../materials/logoTest.png">
+</head>
+<body>
+    
+    <div class="main roboto">
+        <div class="content">
+            <header>
+                <div class="leftHeader roboto-medium">
+                    <div class="buttonTop" onclick="window.location = 'about.html'">O nas</div>
+                    <div class="buttonTop" onclick="window.location = 'materials/material1.html'">Materiały</div>
+                    <div class="buttonTop quiz" onclick="window.location = 'quiz.html'">Quiz</div>
+                </div>
+                <div class="logo">
+                    <img src="../materials/logoTest.png" alt="" class="logoImage" onclick="window.location = '../index.html'">
+                    <div class="name roboto-medium">
+                        <span class="yellow">Sen</span><span class="red">sei</span><span class="blue">fy</span>
+                    </div>
+                </div>
+                <div class="rightHeader">
+                    <div class="icon">
+                        <img src="../materials/Pin.png" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="../materials/Search.png" alt="">
+                    </div>
+                    <div class="buttonSign roboto-medium" onclick="window.location = 'login.html'">Zaloguj się</div>
+                    <div class="buttonSign_out roboto-medium" onclick="logOut();window.location = 'login.html'">Wyloguj się</div>
+                </div>
+            </header>
+
+            <div class="scoreBg"></div>
+            <div class="score roboto-medium">
+                <p class="heading">Wynik quizu</p>
+                <p class="result"></p>
+                <p class="comment"></p>
+
+                <div class="btns">
+                    <div class="btn" onclick="window.location = '../index.html'">Powrót</div>
+                </div>
+            </div>
+
+            <div class="middle">
+                <div id="header" class="mHeader"></div>
+                <div class="mDiv">
+                    <div id="photo" class="imagePreview">
+                        <img class="imageInner">
+                    </div>
+                    <div class="react preventSelection">
+                        <div class="r1" id="bnt0" onclick="isWin(event)" win="false">Radość</div>
+                        <div class="r1" id="bnt1" onclick="isWin(event)" win="false">Smutek</div>
+                        <div class="r1" id="bnt2" onclick="isWin(event)" win="false">Strach</div>
+                        <div class="r1" id="bnt3" onclick="isWin(event)" win="false">Złość</div>
+                        <!-- <div class="testos"   onclick="Start_test()" >test</div> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../scripts/quiz.js" ></script>
+
+    <script>
+        var que = 0
+        var header = document.getElementById("header")
+        header.innerHTML = "<h3>Pytanie: "+que+" / 5</h3>" //wyświetlenie ktore pytanie?????!!?!
+        Start_quiz()
+    </script>
+
+    <script type="module">
+        import {log_val, checkUser, checkAuthState, log_out} from "../scripts/script.js";
+
+        window.logModule = log_val;
+        window.logOut = log_out
+        checkAuthState()
+    </script>
+</body>
+</html>

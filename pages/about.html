@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senseify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/navBar.css">
+    <link rel="stylesheet" href="../styles/font.css">
+    <link rel="stylesheet" href="../styles/about.css">
+    <link rel="icon" type="image/png" href="../materials/logoTest.png">
+</head>
+<body>
+    <div class="main roboto">
+        <div class="content">
+            <header class="header preventSelection">
+                <div class="leftHeader roboto-medium">
+                    <div class="buttonTop " onclick="window.location = 'about.html'">O nas</div>
+                    <div class="buttonTop" onclick="window.location = 'materials/material1.html'">Materiały</div>
+                    <div class="buttonTop quiz" onclick="window.location = 'quiz.html'">Quiz</div>
+                </div>
+                <div class="logo" onclick="window.location = '../index.html'">
+                    <img src="../materials/logoTest.png" alt="" class="logoImage">
+                    <div class="name roboto-medium">
+                        <span class="yellow">Sen</span><span class="red">sei</span><span class="blue">fy</span>
+                    </div>
+                </div>
+                <div class="rightHeader">
+                    <div class="icon">
+                        <img src="../materials/Pin.png" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="../materials/Search.png" alt="">
+                    </div>
+                    <div class="buttonSign roboto-medium" onclick="window.location = '../pages/login.html'">Zaloguj się</div>
+                    <div class="buttonSign_out roboto-medium" onclick="logOut()">Wyloguj się</div>
+                </div>
+            </header>
+
+            <div class="rest">
+                <div class="card">
+                    <div class="leftText">
+                        <p class="title roboto-medium">
+                            Krótko o nas
+                        </p>
+                        <p class="text roboto-regular">
+                            Witaj na naszej stronie! Jesteśmy zespołem pasjonatów technologii, psychologii i nauk o danych, którzy wierzą w potęgę empatii i zrozumienia międzyludzkiego. Założyliśmy Senseify - innowacyjną platformę, która łączy zaawansowane technologie rozpoznawania emocji z wiedzą ekspercką, aby wspierać osoby i organizacje w lepszym rozumieniu emocjonalnych potrzeb ludzi.
+
+Nasza misja skupia się na dostarczaniu narzędzi, które pomagają w identyfikacji i analizie emocji, co ma kluczowe znaczenie w wielu dziedzinach - od edukacji i terapii po biznes i zarządzanie zasobami ludzkimi. Wierzymy, że poprzez lepsze rozumienie emocji możemy przyczynić się do budowania zdrowszych, bardziej zrozumiałych i wspierających relacji międzyludzkich. 
+                        </p>
+                        
+                    </div>
+                    <div class="leftSideCard">
+                        <img src="../materials/image.jpg" alt="">
+                        <div class="buttonOuter">
+                            <button class="button roboto-medium" onclick="window.location = '../pages/contact.html'">
+                                Kontakt
+                            </button>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="card">
+                    
+                    <div class="leftSideCard">
+                        <img src="../materials/people.jpg" alt="">
+                    </div> 
+                    <div class="leftText">
+                        <p class="title roboto-medium">
+                            Nasze wartości:
+                        </p>
+                        <div class="text roboto-regular">
+                            <p>Empatia: Stawiamy na pierwszym miejscu zdolność do rozumienia i dzielenia się uczuciami innych. </p>
+                            <br>
+                            <p>Innowacyjność: Ciągle poszukujemy nowych, lepszych sposobów na wykorzystanie technologii w służbie ludzkim emocjom.</p>
+                            <br>
+                            <p> Prywatność: Zapewniamy, że wszystkie dane są traktowane z najwyższą starannością i zgodnie z obowiązującymi przepisami o ochronie danych osobowych.</p>
+                            <br>
+                            <p>Edukacja: Dążymy do tego, aby nasza technologia była narzędziem edukacyjnym, wspierającym rozwój osobisty i zawodowy użytkowników.</p>
+                        </div>
+                        
+                    </div> 
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const updateScrollPercentage = function() { 
+            const scroll = document.querySelector(".content").scrollTop
+            const height = document.querySelector(".content").offsetHeight
+            console.log(scroll);
+
+            if(scroll>50){
+                document.querySelector("header").classList.add("headerActive")
+                document.querySelector(".buttonSign").classList.add("buttonSignActive")
+            }else{
+
+                document.querySelector("header").classList.remove("headerActive")
+                document.querySelector(".buttonSign").classList.remove("buttonSignActive")
+
+
+            }
+        }
+
+            document.querySelector(".content").addEventListener('scroll', updateScrollPercentage)
+    </script>
+        <script type="module">
+            import {log_val, checkUser, checkAuthState} from "../scripts/script.js";
+    
+            window.logModule = log_val;
+            checkAuthState()
+        </script>
+</body>
+</html>

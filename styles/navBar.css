@@ -1,0 +1,140 @@
+
+
+header{
+    display: flex;
+    height: 110px;
+    width: 100%;
+}
+
+.headerActive{
+    background-color: white;
+    box-shadow: 0px 10px 26px -6px rgba(66, 68, 90, 1);
+}
+
+.buttonSignActive{
+    box-shadow:none !important;
+}
+
+.leftHeader{
+    width: 33%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    color: #074095;
+}
+
+
+.buttonTop{
+    cursor: pointer;
+    transition: all ease-out .2s;
+}
+
+.buttonTop:hover{
+    color: #4169E1;
+}
+
+.logo{
+    display: flex;
+    height: 100%;
+    width: 33%; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logoImage:hover{
+    max-height: 90px;
+}
+
+.logoImage{
+    max-height: 80px;
+    margin-right: 10px;
+    transition: ease-out .2s;
+}
+
+.name{
+    font-size: 30px;
+}
+
+.yellow{
+    color: #FBA834;
+}
+
+.red{
+    color: #DC4949;
+}
+
+.blue{
+    color: #4169E1;
+}
+
+.rightHeader{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100%;
+    width: 33.4%;
+}
+
+.icon > img {
+    max-height: 20px;
+    margin-right: 35px;
+    display: none;
+}
+
+.buttonSign{
+    background-color: #fab75a;
+    cursor: pointer;
+    padding: 12px 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    color: #074095;
+    display: none;
+
+    
+}
+
+.buttonSign:hover{
+    background-color: #ffcb83;
+}
+
+.buttonSign_out{
+    background-color: grey;
+    cursor: pointer;
+    padding: 12px 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    color: white;
+    display: none; 
+    transition: ease-in-out 0.2s;
+}
+
+.buttonSign_out:hover{
+    background-color: rgb(108, 108, 108);
+}
+
+.topIcon{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topIcon > img {
+    cursor: pointer;
+    padding: 20px;
+    max-height: 20px;
+}
+
+.rest{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quiz{
+    display: none;
+}

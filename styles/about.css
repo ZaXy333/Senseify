@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.medium{
+    display: none;
+}
+
+
+.header{
+    position: fixed;
+    display: flex;
+    height: 110px;
+    width: 100%;
+    transition: all ease-out .2s;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+.preventSelection{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.main{
+    width: 100vw;
+}
+
+.content{
+    background-image: url("../materials/tlo2.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+
+
+.rest{
+    margin-top: 110px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    width: 1000px;
+    height: 500px;
+    max-width: 90vw;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 24px 0px rgba(66, 68, 90, 1);
+    margin-bottom: 100px;
+}
+
+.card:first-of-type{
+    margin-top: 50px;
+}
+
+.card > .leftText{
+    width: calc(50% - 60px);
+    padding: 30px;
+    color: black;
+}
+
+.title{
+    font-size: 20px;
+}
+
+.text{
+    margin-top: 20px;
+}
+
+.button{
+    background-color: #FBA834;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding: 8px 40px;
+    border-radius: 25px;
+
+}
+
+
+.card > .leftText > .buttonOuter{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.card > .leftSideCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card > .leftSideCard > .buttonOuter > .button {
+    align-self: center;
+    background-color: #4169E1;
+    cursor: pointer;
+    transition: ease-in-out .2s;
+}
+
+
+.card > .leftSideCard > .buttonOuter > .button:hover {
+    align-self: center;
+    background-color: #395abc;
+    padding: 8px 46px;
+}
+
+.card > .leftSideCard >  img{
+    max-height: 300px;
+}
+
+.cardSmall{
+    width: 600px;
+    height: 180px;
+    margin-top: 50px;
+    border-radius: 20px;
+    background-color: #4169E1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardSmall > .leftText{
+    color: white;
+    width: calc(60% - 60px);
+    padding: 30px;
+}
+
+.cardSmall > img{
+    max-height: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+

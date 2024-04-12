@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senseify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styleRegister.css">
+    <link rel="icon" type="image/png" href="../materials/logoTest.png">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div class="main roboto">
+        <div class="content">
+            <header>
+                <div class="leftHeader roboto-medium">
+                    <div class="buttonTop" onclick="window.location = 'about.html'">O nas</div>
+                    <div class="buttonTop" onclick="window.location = '/materials/material1.html'">Materiały</div>
+                    <div class="buttonTop" onclick="window.location = 'indexExcercise.html'">Ćwiczenia</div>
+                </div>
+                <div class="logo">
+                    <img src="../materials/logoTest.png" alt="" class="logoImage">
+                    <div class="name roboto-medium">
+                        <span class="yellow">Sen</span><span class="red">sei</span><span class="blue">fy</span>
+                    </div>
+                </div>
+                <div class="rightHeader">
+                    <div class="icon">
+                        <img src="../materials/Pin.png" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="../materials/Search.png" alt="">
+                    </div>
+                    <!-- <div class="buttonSign roboto-medium">Zaloguj się</div> -->
+                </div>
+            </header>
+
+            <!-- MAIN -->
+            <div class="contentBox-outer">
+                <div class="contentBox">
+                    <div class="contentHeader">Zaloguj się</div>
+                    
+                    <table class="registerTab">
+                        <tr>
+                            <td><label for="email">E-mail: </label></td>
+                            <td><input type="email" name="email" class="email"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="password">Hasło: </label></td>
+                            <td><input type="password" name="password" class="password"></td>
+                        </tr>
+
+                    </table>
+                    <div>
+                        <button class="BntLogin" onclick="logModule()">Zaloguj sie</button>
+                    </div>
+                    <div class="ToRegister">Nie masz jeszcze konta? <a class="RegLink" href="register.html">Załóż je za darmo!</a></div>
+
+                    <p class="error1"></p><!-- dac w style na czerwono dla potomnych  -->
+                </div>
+            </div>
+        </div>
+    </div>       
+</div>
+
+
+    
+    <script type="module">
+        import {log_val} from "../scripts/script.js";
+
+        window.logModule = log_val;
+        //checkAuth()
+
+    </script>
+</body>
+</html>
